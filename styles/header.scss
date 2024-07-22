@@ -236,7 +236,7 @@
 }
 
 .header-footer {
-  padding: 32px 15px 0;
+  padding: 32px 0 0;
   background-color: #fff;
 }
 
@@ -244,6 +244,7 @@
   font-size: 16px;
   color: #141719;
   font-weight: bold;
+  padding: 0 15px;
 }
 
 .header-footer-list {
@@ -252,6 +253,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding: 0 15px;
 }
 
 .header-footer-item {
@@ -263,6 +265,10 @@
     color: #555f62;
     font-size: 16px;
   }
+}
+
+.header-social {
+  padding: 0 15px;
 }
 
 .header-social-parent {
@@ -281,9 +287,15 @@
   }
 }
 
+.header-social-title {
+  font-size: 16px;
+  color: #141719;
+  font-weight: bold;
+}
+
 .header-footer-bottom {
   background-color: #f9fafa;
-  padding: 24px 0;
+  padding: 24px 15px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
