@@ -9,13 +9,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/style.scss" />
     <link rel="stylesheet" href="/styles/header.scss" />
+    <link rel="stylesheet" href="/styles//content.scss" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a>
+      <div class="container header-content">
+        <a href="index.html">
           <div class="logo-mobile">
             <svg
               data-v-562b0aec=""
@@ -106,7 +108,7 @@
           </div>
 
           <div class="dropdown-bg">
-            <div class="container">
+            <div class="container dropdown-bg-content">
               <div class="dropdown-bg-box">
                 <img
                   src="https://static.tbcconcept.ge/desktop/media/qcifct23.fg4Fixed%20aspect%20ratio%20block%20[Utility].png"
@@ -445,6 +447,35 @@
         </div>
       </div>
     </header>
+
+    <div class="layout">
+      <div class="container">
+        <section>
+          <h5 class="breadcrumb">მთავარი</h5>
+
+          <div class="banner">
+            <div class="banner-overlay">
+              <div class="banner-inner">
+                <h4 class="banner-title">თიბისი კონცეპტი</h4>
+                <p class="banner-text">
+                  პერსონალური საბანკო მომსახურება, მორგებული თქვენს საჭიროებებსა და ინტერესებზე
+                </p>
+                <a href="#" class="banner-button">გამოიწერეთ</a>
+              </div>
+            </div>
+          </div>
+
+          <p class="content-text">
+            გამოიწერეთ თიბისი კონცეპტის ნაკრები და ისარგებლეთ როგორც საბანკო, ისე არასაბანკო
+            უპირატესობებით.
+          </p>
+        </section>
+
+        <section class="nakrebi-section">
+          <h3 class="nakrebi-title">შეარჩიეთ ნაკრები</h3>
+        </section>
+      </div>
+    </div>
   </body>
   <script src="/main.js"></script>
 </html>

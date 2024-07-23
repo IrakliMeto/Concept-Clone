@@ -3,12 +3,11 @@ var burgerMenu = document.getElementById('burger-menu');
 var overlay = document.getElementById('menu');
 
 burgerMenu.addEventListener('click', function () {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
+  this.classList.toggle('close');
+  overlay.classList.toggle('overlay');
 });
 
-
-// this is mobile version header dropdown 
+// this is mobile version header dropdown
 document.addEventListener('DOMContentLoaded', function () {
   const dropdownBoxes = document.querySelectorAll('.mobile-dropdown-box');
 
@@ -32,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
 // this is for desktop header dropdown
 function toggleDropdownList(event) {
   const dropdownBox = event.currentTarget.parentElement;
@@ -40,7 +38,7 @@ function toggleDropdownList(event) {
   const allDropdowns = document.querySelectorAll('.dropdown-box');
   const dropdownBg = document.querySelector('.dropdown-bg');
 
-  allDropdowns.forEach(box => box.classList.remove('active'));
+  allDropdowns.forEach((box) => box.classList.remove('active'));
   dropdownBg.classList.remove('dropdown-bg-active');
 
   if (!isOpen) {
@@ -48,4 +46,3 @@ function toggleDropdownList(event) {
     dropdownBg.classList.add('dropdown-bg-active');
   }
 }
-
