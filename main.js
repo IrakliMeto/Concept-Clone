@@ -46,3 +46,29 @@ function toggleDropdownList(event) {
     dropdownBg.classList.add('dropdown-bg-active');
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.swiper-container', {
+    slidesOffsetBefore: 16,
+    slidesOffsetAfter: 16,
+    loop: false,
+    initialSlide: 0,
+    centeredSlides: false,
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      hide: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 'auto', // Example configuration for screens larger than 768px
+        spaceBetween: 16,
+      }
+    }
+  });
+});

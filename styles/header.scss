@@ -7,6 +7,7 @@
   left: 0;
   border-bottom: 1px solid #eef1f1;
   height: 80px;
+  z-index: 99;
 
   @media (min-width: 1024px) {
     background-color: #fff;
@@ -14,6 +15,7 @@
 }
 
 .header-content {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
