@@ -7,6 +7,8 @@ burgerMenu.addEventListener('click', function () {
   overlay.classList.toggle("overlay");
 });
 
+
+// this is mobile version header dropdown 
 document.addEventListener('DOMContentLoaded', function () {
   const dropdownBoxes = document.querySelectorAll('.mobile-dropdown-box');
 
@@ -29,3 +31,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+// this is for desktop header dropdown
+function toggleDropdownList(event) {
+  const dropdownBox = event.currentTarget.parentElement;
+  const isOpen = dropdownBox.classList.contains('active');
+  const allDropdowns = document.querySelectorAll('.dropdown-box');
+  const dropdownBg = document.querySelector('.dropdown-bg');
+
+  allDropdowns.forEach(box => box.classList.remove('active'));
+  dropdownBg.classList.remove('dropdown-bg-active');
+
+  if (!isOpen) {
+    dropdownBox.classList.add('active');
+    dropdownBg.classList.add('dropdown-bg-active');
+  }
+}
+
