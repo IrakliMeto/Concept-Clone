@@ -51,6 +51,7 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    line-clamp: 2;
     -webkit-line-clamp: 2;
     font-size: 14px;
     color: #141719;
@@ -62,7 +63,8 @@
   }
 
   &--more-text {
-    .main-card-text {
+    .main-card__text {
+      line-clamp: 4;
       -webkit-line-clamp: 4;
       font-size: unset;
       font-weight: unset;
