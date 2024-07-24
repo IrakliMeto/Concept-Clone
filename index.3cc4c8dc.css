@@ -583,6 +583,7 @@ a {
 }
 
 .main-card__text {
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   color: #141719;
   -webkit-box-orient: vertical;
@@ -598,7 +599,8 @@ a {
   }
 }
 
-.main-card--more-text .main-card-text {
+.main-card--more-text .main-card__text {
+  line-clamp: 4;
   -webkit-line-clamp: 4;
   font-size: unset;
   font-weight: unset;
@@ -1242,6 +1244,7 @@ a {
 
 .terms-box > a {
   color: #555f62;
+  text-wrap: nowrap;
 }
 
 .footer-content-boxes {
