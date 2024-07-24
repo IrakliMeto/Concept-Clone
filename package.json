@@ -12,6 +12,7 @@
   },
   "scripts": {
     "serve": "parcel index.html",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build": "parcel build index.html --public-url /Concept-Clone/"
   }
 }
