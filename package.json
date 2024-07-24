@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "swiper": "^11.1.5"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  },
+  "scripts": {
+    "serve": "parcel index.html"
   }
 }

@@ -1,7 +1,5 @@
 var burgerMenu = document.getElementById('burger-menu');
-
 var overlay = document.getElementById('menu');
-
 burgerMenu.addEventListener('click', function () {
   this.classList.toggle('close');
   overlay.classList.toggle('overlay');
@@ -46,6 +44,11 @@ function toggleDropdownList(event) {
     dropdownBg.classList.add('dropdown__bg-active');
   }
 }
+
+document.querySelectorAll('.dropdown__item').forEach((item) => {
+  console.log(item, 'item');
+  item.addEventListener('click', toggleDropdownList);
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper('.swiper-container', {
