@@ -66,9 +66,17 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     breakpoints: {
       768: {
-        slidesPerView: 'auto', // Example configuration for screens larger than 768px
+        slidesPerView: 'auto',
         spaceBetween: 16,
-      }
+        slidesOffsetBefore: 16,
+        slidesOffsetAfter: 16,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesOffsetBefore: 0,
+        slidesOffsetAfter: 0,
+      },
     }
   });
 });
