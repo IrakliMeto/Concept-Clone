@@ -46,7 +46,6 @@ function toggleDropdownList(event) {
 }
 
 document.querySelectorAll('.dropdown__item').forEach((item) => {
-  console.log(item, 'item');
   item.addEventListener('click', toggleDropdownList);
 });
 
