@@ -9,18 +9,18 @@ burgerMenu.addEventListener('click', function () {
 
 // this is mobile version header dropdown
 document.addEventListener('DOMContentLoaded', function () {
-  const dropdownBoxes = document.querySelectorAll('.mobile-dropdown-box');
+  const dropdownBoxes = document.querySelectorAll('.dropdown-mobile__box');
 
   dropdownBoxes.forEach(function (box) {
-    const titleParent = box.querySelector('.mobile-dropdown-title-parent');
-    const dropdownItems = box.querySelector('.mobile-dropdown-items');
+    const titleParent = box.querySelector('.dropdown-mobile__title-parent');
+    const dropdownItems = box.querySelector('.dropdown-mobile__items');
 
     titleParent.addEventListener('click', function () {
       const isActive = box.classList.contains('active');
 
       dropdownBoxes.forEach(function (otherBox) {
         otherBox.classList.remove('active');
-        otherBox.querySelector('.mobile-dropdown-items').classList.remove('active');
+        otherBox.querySelector('.dropdown-mobile__items').classList.remove('active');
       });
 
       if (!isActive) {
@@ -35,15 +35,15 @@ document.addEventListener('DOMContentLoaded', function () {
 function toggleDropdownList(event) {
   const dropdownBox = event.currentTarget.parentElement;
   const isOpen = dropdownBox.classList.contains('active');
-  const allDropdowns = document.querySelectorAll('.dropdown-box');
-  const dropdownBg = document.querySelector('.dropdown-bg');
+  const allDropdowns = document.querySelectorAll('.dropdown__box');
+  const dropdownBg = document.querySelector('.dropdown__bg');
 
   allDropdowns.forEach((box) => box.classList.remove('active'));
-  dropdownBg.classList.remove('dropdown-bg-active');
+  dropdownBg.classList.remove('dropdown__bg-active');
 
   if (!isOpen) {
     dropdownBox.classList.add('active');
-    dropdownBg.classList.add('dropdown-bg-active');
+    dropdownBg.classList.add('dropdown__bg-active');
   }
 }
 

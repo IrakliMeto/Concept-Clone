@@ -12,6 +12,16 @@
   padding: 80px 0 0;
 }
 
+.link {
+  font-size: 16px;
+  color: #222;
+  transition: color 0.25s ease-in-out;
+
+  &:hover {
+    color: #182cc0;
+  }
+}
+
 .arrow-link {
   color: #182cc0;
   display: flex;
