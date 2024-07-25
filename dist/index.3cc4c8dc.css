@@ -514,7 +514,9 @@ a {
 }
 
 .swiper-slide {
+  align-items: stretch;
   width: 281px;
+  height: auto;
 }
 
 .swiper-scrollbar-lock {
@@ -538,9 +540,14 @@ a {
   border: 1px solid #e1e4e5;
   border-radius: 6px;
   flex-direction: column;
+  height: 100%;
   font-size: 12px;
   display: flex;
   overflow: hidden;
+}
+
+.main-card__banner {
+  transition: transform .3s ease-in-out;
 }
 
 .main-card:hover {
@@ -627,13 +634,14 @@ a {
   }
 
   .img-card:hover .img-card__banner {
-    transform: scale(1.02);
+    transform: scale(1.1);
   }
 }
 
 .img-card__banner {
   object-fit: cover;
   height: 100%;
+  transition: transform .3s ease-in-out;
 }
 
 .img-card__box {
@@ -713,6 +721,7 @@ a {
   border-radius: 8px;
   flex-direction: column;
   gap: 16px;
+  height: 100%;
   padding: 28px;
   font-size: 14px;
   display: flex;
@@ -749,6 +758,7 @@ a {
   border-radius: 8px;
   flex-direction: column;
   gap: 16px;
+  height: 100%;
   padding: 24px;
   font-size: 14px;
   font-weight: 500;
