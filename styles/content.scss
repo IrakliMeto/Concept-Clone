@@ -181,7 +181,12 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
-    max-width: 410px;
+    width: 100%;
+    overflow: hidden;
+
+    @media (min-width: 1024px) {
+      max-width: 55%;
+    }
   }
 
   &__title {
@@ -198,12 +203,13 @@
     max-height: 450px;
     height: 100%;
     width: 100%;
-    width: fit-content;
     object-fit: contain;
-    object-position: right;
+    object-position: unset;
+    margin: 0 auto;
 
     @media (min-width: 768px) {
       max-height: 300px;
+      margin: 0;
     }
 
     &--mobile {
@@ -217,11 +223,13 @@
 
       @media (min-width: 768px) {
         display: flex;
+        object-position: right;
       }
     }
   }
 
   &__download {
+    margin: 0 auto;
     text-transform: uppercase;
     border: 1px solid #182cc0;
     border-radius: 4px;
@@ -235,6 +243,8 @@
     align-items: center;
     justify-content: center;
     gap: 3px;
+    max-width: 350px;
+    width: 100%;
 
     @media (min-width: 768px) {
       display: none;
@@ -242,7 +252,14 @@
   }
 
   &__text {
-    padding-right: 20px;
+    max-width: 344px;
+    text-align: left;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      margin: 0;
+      max-width: unset;
+    }
   }
 
   .get-app-wrapper {
