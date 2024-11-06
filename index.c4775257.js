@@ -4,6 +4,26 @@ burgerMenu.addEventListener("click", function() {
     this.classList.toggle("close");
     overlay.classList.toggle("overlay");
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const link1 = document.querySelector("#test-item");
+    // Use VWO's split testing API
+    vwo_$.ready(function() {
+        // Check if VWO is loaded
+        if (typeof _vwo_code !== "undefined") {
+            // Get the variation number (0 for original, 1 for variation)
+            const variation = _vwo_code.variation(1); // "1" is the experiment ID
+            if (variation === 0) // Show the original button (A variant)
+            link1.textContent = "variation 1";
+            else if (variation === 1) // Show the variation button (B variant)
+            link1.textContent = "variation 2";
+        }
+    });
+});
+link.addEventListener("click", function() {
+    const clickedLink = link.textContent === "Date" ? "Date Button" : "Add Button";
+    // Track button click as a goal in VWO
+    _vwo_code.track.goal(123); // Replace "123" with your VWO goal ID
+});
 // this is mobile version header dropdown
 document.addEventListener("DOMContentLoaded", function() {
     const dropdownBoxes = document.querySelectorAll(".dropdown-mobile__box");
