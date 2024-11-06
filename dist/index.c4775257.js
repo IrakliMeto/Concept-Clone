@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 link.addEventListener("click", function() {
-    const clickedLink = link.textContent === "Date" ? "Date Button" : "Add Button";
+    const clickedLink = link.textContent === "variation 1" ? "variation 1" : "variation 2";
     // Track button click as a goal in VWO
     _vwo_code.track.goal(123); // Replace "123" with your VWO goal ID
 });
